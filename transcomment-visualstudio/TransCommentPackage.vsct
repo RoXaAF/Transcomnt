@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+
+  <Commands package="guidTransCommentPackage">
+    <Groups>
+      <Group guid="guidTransCommentCommandSet" id="TransCommentGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidTransCommentCommandSet" id="cmdidToggleComments" priority="0x0100" type="Button">
+        <Parent guid="guidTransCommentCommandSet" id="TransCommentGroup" />
+        <Strings>
+          <ButtonText>Hide/Show Comments</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTransCommentCommandSet" id="cmdidAddComment" priority="0x0101" type="Button">
+        <Parent guid="guidTransCommentCommandSet" id="TransCommentGroup" />
+        <Strings>
+          <ButtonText>Add TransComment</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTransCommentCommandSet" id="cmdidTransformAllComments" priority="0x0102" type="Button">
+        <Parent guid="guidTransCommentCommandSet" id="TransCommentGroup" />
+        <Strings>
+          <ButtonText>Transform All Comments</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <KeyBindings>
+    <KeyBinding guid="guidTransCommentCommandSet" id="cmdidAddComment" editor="guidVSStd97" key1="T" mod1="CONTROL ALT" />
+    <KeyBinding guid="guidTransCommentCommandSet" id="cmdidTransformAllComments" editor="guidVSStd97" key1="T" mod1="CONTROL SHIFT" key2="R" />
+  </KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="guidTransCommentPackage" value="{8d3ef62e-1730-4f78-9f46-4600e25738f6}" />
+    <GuidSymbol name="guidTransCommentCommandSet" value="{6a2ed3ec-77d4-47c0-9cd6-63437ae39c7d}">
+      <IDSymbol name="TransCommentGroup" value="0x1020" />
+      <IDSymbol name="cmdidToggleComments" value="0x0100" />
+      <IDSymbol name="cmdidAddComment" value="0x0101" />
+      <IDSymbol name="cmdidTransformAllComments" value="0x0102" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

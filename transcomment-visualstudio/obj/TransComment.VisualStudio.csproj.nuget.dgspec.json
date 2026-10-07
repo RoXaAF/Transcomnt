@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\TT\\Documents\\Codex\\2026-10-07\\can-x20\\outputs\\transcomment-visualstudio\\TransComment.VisualStudio.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\TT\\Documents\\Codex\\2026-10-07\\can-x20\\outputs\\transcomment-visualstudio\\TransComment.VisualStudio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TT\\Documents\\Codex\\2026-10-07\\can-x20\\outputs\\transcomment-visualstudio\\TransComment.VisualStudio.csproj",
+        "projectName": "TransComment.VisualStudio",
+        "projectPath": "C:\\Users\\TT\\Documents\\Codex\\2026-10-07\\can-x20\\outputs\\transcomment-visualstudio\\TransComment.VisualStudio.csproj",
+        "packagesPath": "C:\\Users\\TT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TT\\Documents\\Codex\\2026-10-07\\can-x20\\outputs\\transcomment-visualstudio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "framework": "net472",
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472",
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[17.10.2178, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.0.32112.339, )"
+            },
+            "System.ComponentModel.Composition": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

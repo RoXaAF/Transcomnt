@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>TransComment.VisualStudio</RootNamespace>
+    <AssemblyName>TransComment.VisualStudio</AssemblyName>
+    <TargetName>TransComment.VisualStudio</TargetName>
+    <TargetVsixContainerName>TransComment.VisualStudio.vsix</TargetVsixContainerName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <VSSDKTargetPlatformRegRootSuffix>Exp</VSSDKTargetPlatformRegRootSuffix>
+    <UseWPF>true</UseWPF>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <CreatePkgDefAssemblyToProcess>$(MSBuildProjectDirectory)\bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).dll</CreatePkgDefAssemblyToProcess>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.0.32112.339" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.10.2178" PrivateAssets="all" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Design" />
+    <Reference Include="PresentationCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <VSCTCompile Include="TransCommentPackage.vsct" />
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+
+  <Import Project="$(NuGetPackageRoot)microsoft.vssdk.buildtools\17.10.2178\tools\vssdk\Microsoft.VsSDK.targets"
+          Condition="Exists('$(NuGetPackageRoot)microsoft.vssdk.buildtools\17.10.2178\tools\vssdk\Microsoft.VsSDK.targets')" />
+</Project>

@@ -1,0 +1,9 @@
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\bin\Debug\net472\net472\TransComment.VisualStudio.dll
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\obj\Debug\net472\net472\TransComment.VisualStudio.csproj.AssemblyReference.cache
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\obj\Debug\net472\net472\TransCommentPackage.cto
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\obj\Debug\net472\net472\_EmptyResource.resources
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\obj\Debug\net472\net472\TransComment.VisualStudio.csproj.GenerateResource.cache
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\obj\Debug\net472\net472\TransComment.VisualStudio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\obj\Debug\net472\net472\TransComment.VisualStudio.csproj.CoreCompileInputs.cache
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\obj\Debug\net472\net472\TransComment.VisualStudio.dll
+C:\Users\TT\Documents\Codex\2026-10-07\can-x20\outputs\transcomment-visualstudio\obj\Debug\net472\net472\TransComment.VisualStudio.pdb
